@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    padding-top: 10px;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 37px 48px 37px 48px;
+}
+div.header img {
+    width: 279px;
+    height: 64px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+}
+ul li a {
+
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+   
+}
+section {
+  background-size: cover;
+  background: url(/css/101Project/images/background.jpg) no-repeat center center;
+  height: 100vh;
+}
+.content {
+    padding: 144px 0 144px 0;
+    margin: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textContainer {
+    width: 756px;
+    letter-spacing: 1px;
+    color: rgba(249, 40, 3, 0.718);
+}
+.textContainer p {
+    color: rgba(51, 116, 185, 0.73);
+}
+h1{
+    font-size: 64px;
+    font-weight: 300;
+}
+div.textContainer p {
+    font-size: 1.875rem;
+}
+button{
+    border: 1px solid white;
+    padding: 15px 30px;
+    font-size: 1.125rem;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+div.imgContainer img {
+    width: 320px;
+    height: 290px;
+    border-radius: 20% 0 20% 0;
+    opacity: 0.5;
+}
