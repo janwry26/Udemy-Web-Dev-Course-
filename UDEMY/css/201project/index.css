@@ -11,7 +11,7 @@ section {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 110vh;
+    height: 100vh;
 }
 .container1{
     background-color: #f7e9d7;
@@ -84,6 +84,7 @@ span:nth-child(4) {
     text-transform: uppercase;
 }
 .curve {
+    
     position: absolute;
     bottom: 0;
     left: 0;
