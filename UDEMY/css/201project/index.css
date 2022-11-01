@@ -62,7 +62,11 @@ nav ul li a:hover{
     margin-top: 30px;
     cursor: pointer;
     border-radius: 4px;
+    transition: all 0.3s;
    
+}
+.content button:hover{
+    font-weight: bold;
 }
 .hero h1{
     font-size: 64px;
@@ -77,6 +81,47 @@ nav ul li a:hover{
     margin: 120px;
 
 }
+.container2{
+    height: 100vh;
+}
+.card-container{
+    display: flex;
+    gap: 2rem;
+   
+    justify-content: center;
+   
+   
+}
+div.card img {
+    width: 100%;
+    object-fit: cover;
+}
+.card{
+    border: 1px solid rgb(183, 177, 177);
+ 
+}
 
+.card-text-container{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    margin: 1.5rem auto;
+    width: 520px;
+}
+.card-text-container h5{
+    font-size: 23px;
+}
+.card-text-container p{
+    font-size: 21px;
+    letter-spacing: 1px;
+    margin: 16px;
+}
+.card-text-container a{
+    text-decoration: none;
+    text-transform: uppercase
+    ;
+}
 
     
