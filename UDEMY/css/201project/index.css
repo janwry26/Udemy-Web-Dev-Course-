@@ -22,11 +22,7 @@ nav ul li a{
     color: black;
     font-size: 18px;
     transition: all 0.3s;
-   
-   
     text-transform: uppercase;
- 
-  
 }
 nav ul li a:hover{
   
@@ -98,6 +94,7 @@ div.card img {
 }
 .card{
     border: 1px solid rgb(183, 177, 177);
+    
  
 }
 

@@ -5,10 +5,11 @@
   }
   
   body {
-   
     color: white;
     font-family: sans-serif;
+    height: 100%;
   }
+
   
   header a {
     text-decoration: none;
@@ -210,6 +211,29 @@ div.card img {
     text-transform: uppercase;
     
 }
+.container3{
+  background-color: pink;
+  display: flex;
+  height: 100vh;
+  margin-top: 100px;
+}
+.left{
+  flex-basis: 60%;
+}
+.right{
+  flex-basis: 40%;
+}
+
+
+.right span button{
+  border: 1px solid white;
+  padding: 15px 30px;
+  font-size: 1.125rem;
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
   @media only screen and (max-width: 1000px) {
     header nav {
       display: none;
@@ -226,20 +250,26 @@ div.card img {
         padding-top: 100px;
         padding-left: 10px;
         flex-wrap: wrap;
-        flex-basis: 100%;
-        
+        flex-basis: 100%;   
     }
-
     .card-container{
         display: flex;
         gap: 2rem;
         justify-content: center;
-        flex-direction: column;
-       
+        flex-direction: column;    
     }
-
     .card{
-        width: 80%;
+        width: 90%;
+    }
+    .container3{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .left{
+      flex-basis: 100%;
+    }
+    .right{
+      flex-basis: 100%;
     }
  
   }
