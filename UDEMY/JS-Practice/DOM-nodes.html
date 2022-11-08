@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="this-class">This is a class 1</div>
+    <div class="this-class">This is a class 2</div>
+    <div class="this-class">This is a class 3</div>
+    <div class="this-class">This is a class 3</div>
+    
+
+    <ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ol>
+    <script>
+        const elems = document.querySelectorAll(".this-class");
+        const elements = document.querySelectorAll("li");
+
+        elements.forEach((node, index) => {
+         node.innerText = `hello this is item index ${index}`; 
+        })
+    </script>
+</body>
+</html>
