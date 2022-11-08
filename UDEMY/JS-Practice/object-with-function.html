@@ -8,15 +8,15 @@
 </head>
 <body>
     <script>
-        function addNumbers(greetingName,...number) {
-            let total = 0;
-            for(i in number){
-                total += number[i];
+        const me = {
+            'name':'Janwry',
+            'age': 21,
+            'favFood':'CJ',
+            talk(to = 'JOY'){
+                console.log(`i am talking to ${to}`);
             }
-            return `your name is ${greetingName}: the total of numbers is ${total}`;
         }
-        const result = addNumbers("Janwry",5,6,7,8,15);
-
+        me.talk('janwry');
     </script>
 </body>
 </html>
