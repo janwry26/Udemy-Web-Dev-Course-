@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = "Janwry Dela Cruz";
+        function greeting(){
+            console.log(`hello ${name}`); // js closure you can access the variable outside the function
+            var name1 = "CJ Flores";//cannot access if it use outside
+        }
+        greeting();
+        console.log(`this is the second person ${name1}`);
+    </script>
+</body>
+</html>
