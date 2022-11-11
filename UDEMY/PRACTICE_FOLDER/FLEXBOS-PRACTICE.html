@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            border: 2px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-container{
+           border: 2px solid pink;
+            flex-grow: 0;
+          
+        }
+        .text-container{
+           border: 2px solid green;
+            flex-shrink: 1;
+            flex-grow: 1;
+            display: inline-block;
+            min-width: 400px;
+            max-width: 500px;
+            min-height: 340px;
+            padding: 80px 10px;
+           
+           
+        }
+        .img-container img {
+            width: 400px;
+            height: auto;
+        }
+        @media  (max-width: 1000px) {
+          .container{
+            flex-direction: column;
+           
+          }
+          .text-container{
+            min-width: 400px;
+            max-width: 400px;
+            min-height: 340px;  
+           
+        }
+        }
+      
+    </style>
+</head>
+<body>
+   <div class="container">
+        <div class="img-container">
+            <img src="/UDEMY/css/101Project/images/side.jpg" alt="">
+        </div>
+        <div class="text-container">
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sapiente, non tempore possimus totam dolores autem aut nam esse similique voluptatum reprehenderit repellat! Dicta molestias voluptates aspernatur inventore? Ipsam, nulla.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate libero voluptatum, praesentium minima maiores natus laudantium ex obcaecati sapiente possimus quo commodi nobis id assumenda quisquam velit aspernatur deserunt ad!
+            </p>
+        </div>
+   </div>
+</body>
+</html>
