@@ -8,7 +8,19 @@
 </head>
 <body>
     <script>
+        class Person {
+            constructor(firstName, lastName){
+                this.firstName = firstName;
+                this.lastName = lastName;
+            }
+            greeting(){
+                console.log(`hello my first name is ${this.firstName}, ${this.lastName}.`);
+
+            }
         
+        }
+        const cj = new Person("Janwry", "Dela Cruz");
+        cj.greeting();
     </script>
 </body>
 </html>
