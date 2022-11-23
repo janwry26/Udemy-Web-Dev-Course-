@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-list ul{
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: black;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 100px;
+}
+nav img{
+    margin: 2rem;
+}
+.item1{
+  
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+   
+}
+.img-video{
+    width: 40px;
+    border: solid orange;
+    background: orange;
+    border-radius: 50%;
+}
