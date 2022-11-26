@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 class="customClassName" id="customId">
+       Our custom title
+    </h1>
+    <button class="custom-class">this is a custom button</button>
+    <p class="custom-class">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore non inventore porro, corrupti accusamus autem esse sit tenetur ipsa delectus quo sunt perferendis labore. Est accusantium eaque illo deleniti tempora.
+    </p>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam tempore, nulla soluta laborum harum eos quasi esse tempora laudantium obcaecati voluptatem, sapiente sit eum aliquid velit ducimus quisquam officia eligendi. 
+    </p>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $("h1,p").text("changed by jQuery #2");
+        $("p.custom-class").text("changed again #3");
+       
+        })
+    </script>
+</body>
+</html>
