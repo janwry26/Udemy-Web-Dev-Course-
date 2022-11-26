@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" value="Hello World!">
+    <section>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nulla accusamus quidem nobis. Mollitia porro necessitatibus quo natus molestias architecto, a vel eum nisi totam ea ipsam qui, deserunt enim.
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           
+            $("input").val("this is changed!")
+           const text = $("section").text();
+           console.log(text);
+        })
+    </script>
+</body>
+</html>
