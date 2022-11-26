@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" class="select-me" value="hello world">
+    <input type="text" class="select-me" value="type in here">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+          $(".select-me").on("keyup",function(){
+            // const $input = $(".select-me")
+            // console.log($input.val())
+           console.log( $(this).val())
+           $(this).val()
+          })
+        })
+    </script>
+</body>
+</html>
