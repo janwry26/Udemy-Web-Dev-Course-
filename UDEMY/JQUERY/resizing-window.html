@@ -26,12 +26,14 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
+        
+            $(window).on("resize",function(){
+                if($(window).width() <= 230){
+                    $("body").css("background-color", "pink")
+                }else{
+                    $("body").css("background-color", "red")
 
-            $("button").on("click",function(){
-                $(".box").animate({
-                    opacity: 0.5,
-                    width: "500px",
-                },4000)
+                }
             })
              
         })

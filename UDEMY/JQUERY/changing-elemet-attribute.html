@@ -20,19 +20,12 @@
     </style>
 </head>
 <body>
-    <button>click me</button>
-    <div class="box"></div>
-    </div>
+    <input type="text">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
-
-            $("button").on("click",function(){
-                $(".box").animate({
-                    opacity: 0.5,
-                    width: "500px",
-                },4000)
-            })
+        const $input = $("input")
+        $input.attr("type", "password")
              
         })
     </script>

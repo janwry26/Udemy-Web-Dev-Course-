@@ -26,13 +26,12 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
-
-            $("button").on("click",function(){
-                $(".box").animate({
-                    opacity: 0.5,
-                    width: "500px",
-                },4000)
-            })
+            const $box = $(".box");
+            $box.innerHeight();
+            $box.outerHeight();
+            $box.outerHeight(true);
+            $(window).height();
+          
              
         })
     </script>

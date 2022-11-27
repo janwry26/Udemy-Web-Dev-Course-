@@ -20,19 +20,25 @@
     </style>
 </head>
 <body>
-    <button>click me</button>
-    <div class="box"></div>
-    </div>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
-
-            $("button").on("click",function(){
-                $(".box").animate({
-                    opacity: 0.5,
-                    width: "500px",
-                },4000)
-            })
+        $("li").each(function(index, element){
+            $(element).text(`${index + 1}. new item here`)
+            if(index === 2){
+                $(element)
+                .css({
+                    backgroundColor: "black",
+                    color: "white"
+                })
+            }
+        })
+          
              
         })
     </script>
