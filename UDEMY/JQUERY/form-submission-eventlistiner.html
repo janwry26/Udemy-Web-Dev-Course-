@@ -1,4 +1,4 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,11 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form>
+        <input type="text" placeholder="your name">
+        <button type="submit">Submit this form</button>
+    </form> 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
+            // $("form").on("submit",function(event){
+            //     event.preventDefault()
+            //     console.log("form was not submitted!")
+            // })
 
+            $("button").on("click",function(event){
+                event.preventDefault()
+                console.log("button is rendered useless")
+            })
           
         })
     </script>
