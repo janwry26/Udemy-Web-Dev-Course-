@@ -20,16 +20,28 @@
     </style>
 </head>
 <body>
-    <button>click me</button>
-    <div class="box">
+    <button class="remove-blue">remove blue</button>
+    <button class="remove-width">remove width</button>
+    <div class="box blue width">
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-        $("button").on("click",() => {
-            $(".box").addClass("blue width");
+        // $("button").on("click",() => {
+        //     $(".box").removeClass("blue width");
+        // })
+        const $box = $(".box");
+        const $removeBlue = $(".remove-blue");
+        const $removeWidth = $(".remove-width");
+        
+            $removeBlue.on("click",function(){
+            $box.removeClass("blue");
+            })
+            $removeWidth.on("click",function(){
+            $box.removeClass("width");
         })
+     
         })
     </script>
 </body>

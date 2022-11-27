@@ -21,15 +21,17 @@
 </head>
 <body>
     <button>click me</button>
-    <div class="box">
-
+    <div class="box"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-        $("button").on("click",() => {
-            $(".box").addClass("blue width");
-        })
+         $("button").on("click", function(){
+          
+            // $(".box").toggle(3000)
+            $(".box").fadeToggle(3000)
+           
+         })
         })
     </script>
 </body>

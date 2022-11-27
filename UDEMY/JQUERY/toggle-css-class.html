@@ -20,16 +20,31 @@
     </style>
 </head>
 <body>
-    <button>click me</button>
-    <div class="box">
+    <button class="toggle-blue">toggle me</button>
+    <!-- <input type="text"> -->
+    <div class="box blue"></div>
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-        $("button").on("click",() => {
-            $(".box").addClass("blue width");
-        })
+            const $box = $(".box");
+
+            $(".toggle-blue").on("click", () =>{
+                $box.toggleClass("blue");
+            })
+
+            // $("input").on("keyup", function(){
+            //     const val = $(this).val()
+            //     if (val === "janwry"){
+
+            //         $box.addClass("blue");
+            //     }
+            //     else {
+            //         $box.removeClass("blue")
+            //     }
+            // })
+     
         })
     </script>
 </body>
