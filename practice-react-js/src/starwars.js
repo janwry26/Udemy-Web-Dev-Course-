@@ -1,5 +1,11 @@
 import './App.css'
 import React from "react";
+// const express = require('express');
+// const app = express();
+// const cors = require('cors');
+
+// app.use(express.json());
+// app.use(cors());
 
 
 class FilmItemRow extends React.Component{
@@ -28,7 +34,7 @@ class Starwars extends React.Component{
     
     getNewChar(){
         const randomNumber = Math.round(Math.random()*88)
-        const url = `https://github.com/akabab/starwars-api/blob/master/api/id/${randomNumber}.json`;
+        const url = `https://github.com/akabab/starwars-api/tree/master/api/id${randomNumber}.json`;
         fetch(url)
         .then(response => response.json())
         .then(data => {
