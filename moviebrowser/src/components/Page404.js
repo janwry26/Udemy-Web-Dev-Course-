@@ -1,5 +1,4 @@
 import { useLocation } from 'react-router-dom';
-import Hero from './Hero';
 
 
 function Page404() {

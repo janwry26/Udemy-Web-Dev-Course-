@@ -2,42 +2,76 @@ import Hero from './Hero';
 import { Link } from 'react-router-dom';
 
 
+
+
+
+
+
 const MovieCard = ({movie}) => {
-  const posterUrl = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
+  // const posterUrl = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
+  // const detailUrl = `/movies/${movie.id}`
+  // const posterUrlNull = "https://image.tmdb.org/t/p/w500/null"
+  
+  if(movie.poster_path){
+
+  //  return(
+    // )
+    // }
+    
+    var posterUrl = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
+  }else{
+    posterUrl=require("./img.jpg");
+  }
   const detailUrl = `/movies/${movie.id}`
   return(
-  <div className="col-lg-3 col-md-3 col-2 my-4">
-    <div className="card">
-    <img src={posterUrl} className="card-img-top" alt={movie.original_title}/>
-    <div className="card-body">
-        <h5 className="card-title">{movie.original_title}</h5>
-        <Link to={detailUrl} className="btn btn-primary">Show details</Link>
-    </div>
-    </div>
-  </div>
-)
-}
+    
+      <div className="col-4 col-md-6 col-lg-2 my-3">
+         <Link to={detailUrl} style={{'textDecoration':'none'}}>
+        <div className="card h-100">
+        <img src={posterUrl} className="card-img-top img-thumbnail img-fluid" alt={movie.original_title}/> 
+        <div className="card-body">
+           
+            <p className="card-title text-truncate">{movie.original_title}</p>
+            
+        </div>
+        </div>
+        </Link>
+      </div>
+    
+    )
+   }
 
 const Search = ({keyword, searchResults}) => {
-    const title = `You are searching for ${keyword}`;
 
-    const resultHtml = searchResults.map((obj,i) =>{
-     return <MovieCard movie={obj} key={i}/>
-    })
-
-    return (
+    if(searchResults.length){
+      const resultsHtml=searchResults.map((obj)=><MovieCard key={obj.id}  movie={obj}/>)
+    
+    return(
       <>
-      <Hero text={title}/> 
-      {resultHtml &&
-        <div className='container'>
-          <div className="row">
-            {resultHtml}
-          </div>
-        </div>
-      }
+         <Hero text={`You are searching for "${keyword}"`} />
 
-
+          <div className='container'>
+              <div className='row'>
+              {resultsHtml}
+              </div>
+          </div>        
       </>
     )
-}
+  }else{
+    const resultNotFound=require('./img.jpg') 
+
+    return(
+        <>
+        <Hero text={"Result not found"} />
+        <div className='container'>
+        <img src={resultNotFound} className="img-fluid" alt='Not found'/>
+        </div>
+        
+        </>  
+    )
+    
+  }
+  }
+    
+
 export default Search;
