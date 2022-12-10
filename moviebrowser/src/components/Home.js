@@ -15,7 +15,7 @@ const MovieCard=({movie})=>{
       posterUrl=require("./img.jpg")
   }
 
-  const detailUrl=`/moviedetail/${movie.id}`;
+  const detailUrl=`/movies/${movie.id}`;
 
 
 
